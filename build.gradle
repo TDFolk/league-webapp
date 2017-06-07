@@ -21,3 +21,5 @@ dependencies {
     compile("nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect")
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
+
+mainClassName = "com.zmfcorp.App"
