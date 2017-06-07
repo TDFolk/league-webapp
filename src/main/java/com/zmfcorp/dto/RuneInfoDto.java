@@ -1,12 +1,10 @@
-package com.zmfcorp.league.dto;
+package com.zmfcorp.dto;
 
-import com.zmfcorp.league.dto.staticdata.RuneDto;
+import com.zmfcorp.dto.staticdata.RuneDto;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by Trent on 6/3/2017.

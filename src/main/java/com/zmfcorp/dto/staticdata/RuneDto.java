@@ -1,4 +1,4 @@
-package com.zmfcorp.league.dto.staticdata;
+package com.zmfcorp.dto.staticdata;
 
 /**
  * Created by Trent on 6/3/2017.

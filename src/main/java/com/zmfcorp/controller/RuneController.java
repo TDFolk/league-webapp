@@ -1,13 +1,12 @@
-package com.zmfcorp.league.controller;
+package com.zmfcorp.controller;
 
-import com.zmfcorp.league.dto.RuneCompleteInfoDto;
-import com.zmfcorp.league.dto.RunePagesDto;
+import com.zmfcorp.dto.RuneCompleteInfoDto;
+import com.zmfcorp.service.RuneService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import com.zmfcorp.league.service.RuneService;
 
 /**
  * Created by Trent on 5/30/2017.

@@ -2,7 +2,7 @@ plugins {
     id 'org.springframework.boot' version '1.5.3.RELEASE'
 }
 
-group 'com.zmfcorp.league'
+group 'com.zmfcorp'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'

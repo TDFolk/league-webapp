@@ -1,10 +1,8 @@
-package com.zmfcorp.league.dto;
+package com.zmfcorp.dto;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by Trent on 6/3/2017.

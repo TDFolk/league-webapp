@@ -1,9 +1,6 @@
-package com.zmfcorp.league.dao;
+package com.zmfcorp.dao;
 
-import com.zmfcorp.league.dto.staticdata.RuneListDto;
-import com.zmfcorp.league.service.HttpService;
-import com.zmfcorp.league.service.RuneService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.zmfcorp.dto.staticdata.RuneListDto;
 
 /**
  * Created by Trent on 6/3/2017.

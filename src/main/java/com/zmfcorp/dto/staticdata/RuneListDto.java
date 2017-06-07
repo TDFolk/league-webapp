@@ -1,4 +1,4 @@
-package com.zmfcorp.league.dto.staticdata;
+package com.zmfcorp.dto.staticdata;
 
 import java.util.HashMap;
 import java.util.Map;

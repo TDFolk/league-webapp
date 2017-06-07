@@ -1,10 +1,8 @@
-package com.zmfcorp.league.service;
+package com.zmfcorp.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.zmfcorp.league.configuration.LeagueConfiguration;
-import com.zmfcorp.league.dao.RuneDataDao;
+import com.zmfcorp.configuration.LeagueConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

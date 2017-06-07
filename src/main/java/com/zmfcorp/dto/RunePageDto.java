@@ -1,4 +1,4 @@
-package com.zmfcorp.league.dto;
+package com.zmfcorp.dto;
 
 import java.io.Serializable;
 import java.util.HashSet;

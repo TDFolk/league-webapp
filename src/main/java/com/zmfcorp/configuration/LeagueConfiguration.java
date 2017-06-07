@@ -1,11 +1,9 @@
-package com.zmfcorp.league.configuration;
+package com.zmfcorp.configuration;
 
-import com.zmfcorp.league.dao.RuneDataDao;
-import org.springframework.beans.factory.annotation.Configurable;
+import com.zmfcorp.dao.RuneDataDao;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 /**
  * Created by Trent on 6/2/2017.
