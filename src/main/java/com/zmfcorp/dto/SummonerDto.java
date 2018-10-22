@@ -11,6 +11,7 @@ public class SummonerDto implements Serializable{
     long id;
     String name;
     int summonerLevel;
+    long accountId;
 
     public long getProfileIconId() {
         return profileIconId;
@@ -50,5 +51,13 @@ public class SummonerDto implements Serializable{
 
     public void setSummonerLevel(int summonerLevel) {
         this.summonerLevel = summonerLevel;
+    }
+
+    public long getAccountId() {
+        return accountId;
+    }
+
+    public void setAccountId(long accountId) {
+        this.accountId = accountId;
     }
 }

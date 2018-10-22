@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import java.util.Map;
+
 /**
  * Created by Trent on 6/3/2017.
  */
@@ -29,10 +31,17 @@ public class HttpService {
     @Autowired
     ObjectMapper mapper;
 
-    protected String buildURI(String uri_path) {
+    protected String buildURI(String uri_path, Map<String, String> queries) {
         uriComponentsBuilder = UriComponentsBuilder.newInstance();
+
         uriComponentsBuilder.scheme("https").host(leagueConfiguration.getLeagueAPI_host())
-            .path(uri_path).queryParam("api_key", leagueConfiguration.getApi_key()).build();
+            .path(uri_path);
+        if (queries != null) {
+            for (Map.Entry<String, String> entry: queries.entrySet()) {
+                uriComponentsBuilder.queryParam(entry.getKey(), entry.getValue());
+            }
+        }
+        uriComponentsBuilder.queryParam("api_key", leagueConfiguration.getApi_key()).build();
         return uriComponentsBuilder.toUriString();
     }
 

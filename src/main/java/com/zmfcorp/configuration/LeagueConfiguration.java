@@ -1,6 +1,8 @@
 package com.zmfcorp.configuration;
 
+import com.zmfcorp.dao.MissingStaticDataDao;
 import com.zmfcorp.dao.RuneDataDao;
+import com.zmfcorp.service.MatchHistoryService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,18 +19,43 @@ public class LeagueConfiguration {
     @Value("${league.api.key}")
     private String api_key;
 
-    @Value("${path.summonerv1-4.byname}")
-    private String path_summonerByName;
+    @Value("${path.summoner.v3.name}")
+    private String path_summonerInfo;
 
-    @Value("${path.runes/masteriesv1-4}")
-    private String path_runes_masteries;
+    @Value("${path.runes.v3}")
+    private String path_summonerRunes;
 
-    @Value("${path.statcdata.runes}")
-    private String path_staticdata_runes;
+    @Value("${path.staticdata.v3.runes}")
+    private String path_staticdata_runeData;
+
+    @Value("${staticdata.tag}")
+    private String tag;
+
+    @Value("${league.data.dragon.host}")
+    private String data_dragon_host;
+
+    @Value("${data.dragon.runes}")
+    private String data_dragon_runes;
+
+    @Value("${path.match-history.v3.account}")
+    private String path_matchHistoryRecent;
+
+    @Value("${path.staticdata.v3.champions}")
+    private String path_staticdata_championData;
 
     @Bean
     public RuneDataDao runeDataDao() {
         return new RuneDataDao();
+    }
+
+    @Bean
+    public MatchHistoryService matchHistoryService() {
+        return new MatchHistoryService();
+    }
+
+    @Bean
+    public MissingStaticDataDao missingStaticDataDao() {
+        return new MissingStaticDataDao();
     }
 
     public String getLeagueAPI_host() {
@@ -39,15 +66,35 @@ public class LeagueConfiguration {
         return api_key;
     }
 
-    public String getPath_summonerByName() {
-        return path_summonerByName;
+    public String getPath_summonerInfo() {
+        return path_summonerInfo;
     }
 
-    public String getPath_runes_masteries() {
-        return path_runes_masteries;
+    public String getPath_summonerRunes() {
+        return path_summonerRunes;
     }
 
-    public String getPath_staticdata_runes() {
-        return path_staticdata_runes;
+    public String getPath_staticdata_runeData() {
+        return path_staticdata_runeData;
+    }
+
+    public String getTag() {
+        return tag;
+    }
+
+    public String getData_dragon_host() {
+        return data_dragon_host;
+    }
+
+    public String getData_dragon_runes() {
+        return data_dragon_runes;
+    }
+
+    public String getPath_matchHistoryRecent() {
+        return path_matchHistoryRecent;
+    }
+
+    public String getPath_staticdata_championData() {
+        return path_staticdata_championData;
     }
 }

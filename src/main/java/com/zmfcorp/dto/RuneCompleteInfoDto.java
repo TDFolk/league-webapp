@@ -1,5 +1,7 @@
 package com.zmfcorp.dto;
 
+import com.zmfcorp.dto.staticdata.ImageDto;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

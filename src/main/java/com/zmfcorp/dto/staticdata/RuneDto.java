@@ -8,6 +8,10 @@ public class RuneDto implements Comparable<RuneDto> {
     String name;
     String description;
     MetaDataDto rune;
+    ImageDto image;
+    String imageURL;
+    RuneStatsDto stats;
+
 
     public int getId() {
         return id;
@@ -43,5 +47,29 @@ public class RuneDto implements Comparable<RuneDto> {
 
     public int compareTo(RuneDto o) {
         return this.name.toLowerCase().compareTo(o.name.toLowerCase());
+    }
+
+    public ImageDto getImage() {
+        return image;
+    }
+
+    public void setImage(ImageDto image) {
+        this.image = image;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
+    }
+
+    public RuneStatsDto getStats() {
+        return stats;
+    }
+
+    public void setStats(RuneStatsDto stats) {
+        this.stats = stats;
     }
 }
